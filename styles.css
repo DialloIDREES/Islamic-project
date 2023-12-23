@@ -1,0 +1,1333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins' , sans-serif;
+    
+      
+    
+}
+
+  
+  li ,a{
+    font-family: "Poppins" , sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    background: #fff;
+   
+    
+  
+  }
+  
+  .logo-container img {
+    width: 100px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  
+  .menu-icon {
+    display: none;
+    width: 30px;
+    height: 20px;
+    position: relative;
+  }
+  
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: 0;
+  }
+  
+  .menu-icon::before {
+    top: 0;
+  }
+  
+  .menu-icon::after {
+    bottom: 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+    .nav_links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      z-index: 99;
+      text-align: center;
+    }
+    .nav_links.showing {
+      display: block;
+    }
+    .nav_links li {
+        display: block;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+        }
+        
+        .nav_links li a {
+        transition: all 0.3s ease 0s;
+        color: #000;
+        }
+        
+        .nav_links li a:hover {
+        color: #019147;
+        }
+        }
+  
+  
+  
+
+
+button{
+    padding: 9px 25px;
+    background-color: #ff9822;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+button:hover{
+    color: #24252A;
+}
+
+.element-background {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover{
+
+    color: currentColor;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background: #fff;
+    
+  }
+  
+
+  
+  header .container-fluid {
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 66px; /* Set the min-height to the height of the logo */
+  }
+  
+
+@media(max-width:992px){
+
+    header .container-fluid{
+
+        padding: 0 5%;
+    }
+}
+
+header .navb-logo img{
+
+    width: 140px;
+    height: 66px;
+}
+
+header .navb-items{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 3px;
+}
+
+header .item{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    background: #fff;
+ 
+}
+li {
+    font-family: "Poppins" , sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+  }
+
+header .item:hover{
+
+    color: #019147;
+}
+ h1 {
+    display: inline;
+    margin-right: 20px;
+   
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  .navb-logo img{
+    width: 100px;
+  }
+  .navb-logo{
+    display: flex;
+    align-items: center;
+  }
+
+header .item-button a{
+    border-radius: 10px;
+    font-family: "Poppins" , sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: #ff9822;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+header .item-button a:hover{
+
+    background-color: #64d6f4;
+}
+
+header .mobile-toggler{
+
+    font-size: 30px;
+}
+
+/* modal */
+
+
+.modal-dialog{
+
+    margin: 0;
+    width: 430px;
+}
+
+@media(max-width: 450px){
+
+    .modal-dialog{
+
+        width: 82%;
+    }
+}
+
+.modal-content{
+
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #019147;
+}
+
+.modal-header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fefefe;
+}
+
+.modal-header img{
+
+    width: 140px;
+    height: 66px;
+    margin-top: 17.5px;
+}
+
+.modal-header .btn-close{
+
+    background: transparent;
+    opacity: 1;
+}
+
+.modal-header i{
+
+    color: #fefefe;
+    font-size: 30px;
+}
+
+.modal-body{
+
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+
+.modal-body .modal-line{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #036331;
+    border-bottom: 1px solid #036331;
+}
+
+.modal-body .modal-line:hover{
+
+    color: #fefefe;
+    border-bottom: 1px solid #fefefe;
+}
+
+.modal-line a{
+
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #fefefe;
+}
+
+.modal-line i{
+
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 0 0 3px 3px;
+}
+
+.navb-button{
+
+    width: 100%;
+    height: 47px;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #019147;
+    letter-spacing: 2px;
+    transition: all .5s ease;
+}
+
+.navb-button:hover{
+
+    background-color: #036331;
+    color: #fefefe;
+}
+
+.mobile-modal-footer{
+
+    width: 87%;
+    margin: 0 auto;
+    padding: 20% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #274d8a;
+}
+
+.mobile-modal-footer i:hover{
+
+    color: #fefefe;
+}
+
+
+
+.section-1{
+
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 p{
+
+    font-size: 75px;
+    font-weight: 700;
+    color: #102447;
+    width: 90%;
+    text-align: center;
+}
+
+@media(max-width:767px){
+
+    .section-1 p{
+
+        font-size: 50px;
+        text-align: start;
+        width: 70%;
+        margin: auto;
+    }
+} 
+  
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Welcome Section Styles */
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #019147;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.welcome-text {
+  margin-right: 20px;
+  color: #fff;
+}
+
+.welcome-text {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+#cookie-banner button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Recent views styles */
+#recent-views {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  max-height: 200px;
+  overflow-y: scroll;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+#recent-views h2 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+#recent-views ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#recent-views li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#recent-views li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#recent-views li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.welcome-text h2 {
+  font-size: 30px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.welcome-paragraph {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.welcome-image {
+  max-width: 400px; /* Adjust the size as desired */
+  height: auto;
+}
+
+/* Button Styles */
+.welcome-container button {
+  background-color: #ff9822;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .welcome-text h2 {
+    font-size: 24px;
+  }
+  .welcome-paragraph {
+    font-size: 16px;
+  }
+  .welcome-container {
+    flex-direction: column;
+  }
+  .welcome-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .welcome-image {
+    display: none;
+  }
+}
+
+.about-islam {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
+  margin-bottom: 20px;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-image: url('path/to/play-icon.png');
+  background-size: cover;
+}
+
+.discover-more {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.discover-more h1 {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.discover-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.discover-more button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.discover-more button:hover {
+  background-color: #555;
+}
+
+  
+      /* About Masjid Section Styles */
+      .about-masjid {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+  
+      .masjid-image {
+        flex: 0 0 50%;
+        margin-right: 20px;
+      }
+  
+      .about-image {
+        max-width: 100%;
+        height: auto;
+      }
+  
+      .abt-desc {
+        flex: 0 0 50%;
+      }
+  
+      .sec-tl {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+  
+      .sec-tl .theme-clr {
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+  
+      .sec-tl h2 {
+        font-size: 30px;
+        margin: 0;
+      }
+  
+      .sec-tl img {
+        margin-left: 10px;
+        max-width: 20px;
+        height: auto;
+      }
+  
+      .abt-desc p {
+        margin-bottom: 10px;
+      }
+  
+      /* Button Styles */
+      button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+  
+      /* Media Queries */
+      @media (max-width: 768px) {
+        .welcome-text h2 {
+          font-size: 24px;
+        }
+        .welcome-paragraph {
+          font-size: 16px;
+        }
+        .about-masjid {
+          flex-direction: column;
+        }
+        .masjid-image, .abt-desc {
+          flex: 0 0 100%;
+          margin-right: 0;
+        }
+      }
+
+
+button{
+    padding: 9px 25px;
+    background-color: #ff9822;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+button:hover{
+    color: #24252A;
+}
+
+#color-h1{
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .prayer-timing-container {
+    flex-direction: column;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .left-side,
+  .right-side {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .prayer-h2 {
+    padding: 10px 5%;
+  }
+}
+
+    .praying-time {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 230px;
+    }
+    
+    .praying-time h2 {
+      margin-right: 20px;
+    }
+    
+    .praying-time button {
+      margin-right: 20px;
+    }
+    
+    .prayer-timing-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      color: #121413;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 1200px;
+      min-height: 400px;
+      margin: 0 auto; /* Add this line */
+    }
+    
+    .prayer-timing-container p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 200;
+    }
+    
+    .left-side {
+      position: relative;
+      width: 100%;
+      max-width: 50%;
+      height: 530px;
+      background-color: #f6f6f6;
+      margin: 0; /* Add this line */
+    }
+
+    /* Style the prayer name */
+.prayer-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+/* Style the date container */
+.date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+/* Style the Christian date */
+.christian-date {
+  font-size: 1.2rem;
+}
+
+/* Style the next prayer container */
+.next-prayer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style the next prayer name */
+.next-prayer-name {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Style the next prayer time */
+.next-prayer-time {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+    
+    .left-side h2,
+    o {
+      margin-top: 100px;
+    }
+    
+    .right-side {
+      flex-basis: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+    }
+    
+    .salah-container {
+      background-color: #fff;
+    }
+
+    
+    
+    .salah-container,
+    .azan-time-container,
+    .prayer-time-container {
+      flex-basis: 30%;
+      text-align: center;
+      margin: 20px;
+      margin-top: -10px;
+    }
+    
+    .salah img,
+    .azan img,
+    .prayer-time-container img {
+      width: 100px;
+      height: 100px;
+    }
+    
+    
+    .salah-container h3,
+    .azan-time-container h3,
+    .prayer-time-container h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-top: -1rem;
+      margin-bottom: 0.5rem;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+    }
+
+    .salah-container h3 {
+      margin-left: 16px;
+    }
+
+    
+    
+    .salah-container ul,
+    .azan-time-container ul,
+    .prayer-time-container ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+       gap: 40px;
+    }
+
+  
+    
+    .salah-container li,
+    .azan-time-container li,
+    .prayer-time-container li {
+      margin-bottom: -0.4rem;
+      font-size: 1rem;
+      font-weight: 300;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+      @media screen and (max-width: 768px) {
+        .prayer-timing-container {
+          flex-direction: column;
+          height: auto;
+        }
+    
+      .left-side {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+    
+      .right-side {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        max-width: 50%;
+        height: 530px;
+        background-color: #fff;
+        margin: 0; /* Add this line */
+      }
+    
+      .prayer-timing-container h2,
+      .prayer-timing-container p {
+        margin-left: 0;
+      }
+    }
+    
+    .prayer-h2 {
+      padding: 10px 20%;
+    }
+    
+    .right-side li {
+      background: #019147;
+      border-radius: 20px;
+      color: #fff;
+      border: none;
+    }
+    .bg-image-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 15px;
+    }
+
+  
+  
+  
+  .discover-more {
+    flex: 1;
+    padding-left: 30px;
+  }
+  
+  .discover-more h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .discover-more p.discover-paragraph {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .discover-more button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff9822;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .video-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    max-width: 50%;
+    max-height: 400px;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .discover-more button:hover{
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  }
+  
+
+  
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  .service-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .service-title img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .service-title h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .service-text {
+    margin-bottom: 40px;
+  }
+  
+  .service-box {
+    max-width: 360px;
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #000;
+    transition: background-color 0.5s ease; 
+  }
+ 
+  .service-box-quran:hover img[src="img/quran.png"] {
+    content: url('img/coran.png'); /* Change the image to the image you want */
+  } 
+  
+  .service-box-masjid:hover img[src="img/mosquee.png"] {
+    content: url('img/mosque.png'); /* Change the image to the image you want */
+  } 
+  .service-box-quiz:hover img[src="img/quiz.png"] {
+    content: url('img/white-quiz.png'); /* Change the image to the image you want */
+  }
+  
+  .service-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    width: 100px; /* Change the width to the size you want */
+    height: 100px; /* Change the height to the size you want */
+  }
+  
+  .service-box:hover {
+    background-color: #019147; /* Change the background color to the color you want */
+    color: #ffffff; /* Change the font color to the color you want */
+
+  }
+  
+  .service-box:hover h2,
+  .service-box:hover p,
+  .read-more-btn:hover {
+    color: #ffffff; /* Change the font color to the color you want */
+  }
+  .service-box p{
+    font-weight: 200;
+  }
+  
+  .services-offered-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Add this to align the boxes properly */
+  }
+  .service-box:hover .read-more-text {
+    display: inline;
+    animation: fadeIn 0.5s;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .service-title h2 {
+      font-size: 24px;
+    }
+    
+    .service-box {
+      max-width: 100%;
+      margin: 20px 0;
+    }
+  }
+
+  .read-more-btn{
+    color: rgb(18, 195, 18);
+  }
+
+
+
+  .read-more-text{
+    display: none;
+
+  }
+
+  .read-more-text--show{
+    display: inline;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .contact-side {
+    width: 48%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-me {
+    background-color: #f5f5f5;
+    font-family: 'Poppins' ,sans-serif;
+  }
+  
+
+  
+  .contact-me h2,
+  .reach-us h2 {
+    margin-top: 0;
+  }
+  
+  .contact-me form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-me label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-me input,
+  .contact-me textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-me textarea {
+    height: 150px;
+  }
+  
+  .contact-me input[type="submit"] {
+    background-color: #ff9822;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .contact-me input[type="submit"]:hover {
+    background-color: #e67b02;
+  }
+  
+  .reach-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .reach-us li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .reach-us li i {
+    margin-right: 10px;
+    color: #019147;
+    font-size: 20px;
+  }
+/* Main footer */
+.main-footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-p {
+  text-align: justify;
+}
+
+.main-footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer-logo img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.main-footer-logo .site-name {
+  color: white;
+  font-size: 18px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  background-color: #272727;
+  color: white;
+  padding: 20px;
+  text-align: center;
+ 
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+  color: #f1f1f1;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container .container {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.bottom-bar {
+  background-color: #272727;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.bottom-bar p {
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-container .container {
+    flex-basis: 100%;
+  }
+}
+
+/* Responsive styles for bottom bar */
+@media (max-width: 768px) {
+  .bottom-bar {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bottom-bar {
+    font-size: 8px;
+  }
+}
+
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-img img {
+    width: 80%; /* Adjust the width as per your preference */
+  }
+}
